@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      .box1 {
+        background-color: #4caf50;
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+      }
+      .box2 {
+        padding: 10px;
+      }
+      .box3 {
+        background-color: #333333;
+        color: white;
+      }
+      .box-container .box1,
+      .box3 {
+        text-align: center;
+        padding: 50px;
+      }
+      .box-container {
+        background-color: #f1f1f1;
+        border: 1px solid #333333;
+      }
+      .box-container .box1,
+      .box2,
+      .box3 {
+        border: 1px solid #333333;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="box1">CSS Box Model Example</div>
+
+      <div class="box2">
+        <p>
+          The CSS box model describes the rectangular boxes that are generated
+          for elements in the document tree and laid out according to the visual
+          formatting model.
+        </p>
+        <p>
+          Each box has a content area (e.g., text, an image, etc.) and optional
+          surrounding padding, border, and margin areas.
+        </p>
+        <p>
+          The box-sizing property can be used to specify whether the width and
+          height of an element should include its padding and border or not.
+        </p>
+      </div>
+      <div class="box3">&copy; 2023 CSS Box Model Example</div>
+    </div>
+  </body>
+</html>
